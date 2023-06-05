@@ -1,0 +1,17 @@
+//
+//  APILocationSearchEmbedded.swift
+//  Weather
+//
+//  Created by Valery Shamshin on 03.06.2023.
+//  Copyright © 2023 Heads and Hands. All rights reserved.
+//
+
+struct APILocationSearchEmbeddedResults: Decodable {
+    
+    let searchResults: [APILocationSearchResult]
+    
+    private enum CodingKeys: String, CodingKey {
+        case searchResults = "city:search-results"
+    }
+    
+}

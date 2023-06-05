@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell contentMode="center" id="CpV-q7-cmG" customClass="LocationsPageCell" customModule="Weather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="549" height="1064"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vkS-l0-2Z0">
+                <rect key="frame" x="0.0" y="0.0" width="549" height="1064"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MxB-Wt-qAK" userLabel="Header Container">
+                        <rect key="frame" x="0.0" y="0.0" width="549" height="1064"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b85-UF-GIp" userLabel="Background Image View">
+                                <rect key="frame" x="16" y="16" width="517" height="234.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Ulyanovsk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRp-sF-AJu">
+                                <rect key="frame" x="20" y="50" width="509" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Mostly Cloudy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWs-bc-Umh">
+                                <rect key="frame" x="20" y="97" width="509" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text=" 4°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDn-bt-65m">
+                                <rect key="frame" x="217" y="115" width="115" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JRp-sF-AJu" firstAttribute="top" secondItem="MxB-Wt-qAK" secondAttribute="top" constant="50" id="DE6-v2-glE"/>
+                            <constraint firstItem="dWs-bc-Umh" firstAttribute="leading" secondItem="MxB-Wt-qAK" secondAttribute="leading" constant="20" id="Gp3-6q-SyD"/>
+                            <constraint firstItem="CDn-bt-65m" firstAttribute="top" secondItem="dWs-bc-Umh" secondAttribute="bottom" id="Kqs-5y-7io"/>
+                            <constraint firstItem="dWs-bc-Umh" firstAttribute="top" secondItem="JRp-sF-AJu" secondAttribute="bottom" constant="5" id="KyB-ug-RG4"/>
+                            <constraint firstItem="JRp-sF-AJu" firstAttribute="centerX" secondItem="MxB-Wt-qAK" secondAttribute="centerX" id="OOF-g1-6rF"/>
+                            <constraint firstItem="b85-UF-GIp" firstAttribute="leading" secondItem="MxB-Wt-qAK" secondAttribute="leading" constant="16" id="QCI-Xq-opC"/>
+                            <constraint firstItem="b85-UF-GIp" firstAttribute="top" secondItem="MxB-Wt-qAK" secondAttribute="top" constant="16" id="R9a-QW-YwP"/>
+                            <constraint firstAttribute="trailing" secondItem="dWs-bc-Umh" secondAttribute="trailing" constant="20" id="S1e-ZM-0oT"/>
+                            <constraint firstAttribute="trailing" secondItem="JRp-sF-AJu" secondAttribute="trailing" constant="20" id="SDI-YT-N7e"/>
+                            <constraint firstItem="dWs-bc-Umh" firstAttribute="centerX" secondItem="MxB-Wt-qAK" secondAttribute="centerX" id="Wk0-o8-Tca"/>
+                            <constraint firstItem="CDn-bt-65m" firstAttribute="centerX" secondItem="MxB-Wt-qAK" secondAttribute="centerX" id="bYv-Hk-HBv"/>
+                            <constraint firstAttribute="trailing" secondItem="b85-UF-GIp" secondAttribute="trailing" constant="16" id="cEa-IQ-nSF"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="b85-UF-GIp" secondAttribute="bottom" constant="16" id="dWV-b1-AOu"/>
+                            <constraint firstItem="JRp-sF-AJu" firstAttribute="leading" secondItem="MxB-Wt-qAK" secondAttribute="leading" constant="20" id="rMl-L9-1oa"/>
+                            <constraint firstItem="b85-UF-GIp" firstAttribute="bottom" secondItem="CDn-bt-65m" secondAttribute="bottom" constant="16" id="vsz-9q-9cs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MxB-Wt-qAK" firstAttribute="top" secondItem="vkS-l0-2Z0" secondAttribute="top" id="FJD-u2-SNu"/>
+                    <constraint firstAttribute="bottom" secondItem="MxB-Wt-qAK" secondAttribute="bottom" id="ZM6-ep-U4y"/>
+                    <constraint firstAttribute="trailing" secondItem="MxB-Wt-qAK" secondAttribute="trailing" id="fOX-s0-RDL"/>
+                    <constraint firstItem="MxB-Wt-qAK" firstAttribute="leading" secondItem="vkS-l0-2Z0" secondAttribute="leading" id="uJv-Iv-gvm"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="549" height="1064"/>
+            <connections>
+                <outlet property="locationNameLabel" destination="JRp-sF-AJu" id="TkX-dc-onF"/>
+                <outlet property="temperatureLabel" destination="CDn-bt-65m" id="TiN-dA-1bW"/>
+                <outlet property="weatherDescriptionLabel" destination="dWs-bc-Umh" id="CcB-TL-22n"/>
+                <outlet property="weatherIconView" destination="b85-UF-GIp" id="ehQ-y6-6Ug"/>
+            </connections>
+            <point key="canvasLocation" x="448.55072463768118" y="555.13392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
